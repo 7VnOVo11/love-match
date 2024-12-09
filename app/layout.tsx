@@ -1,5 +1,6 @@
 import type { Metadata } from "next";
 import "./globals.css";
+import { Toaster } from 'sonner'
 
 export const metadata: Metadata = {
   title: "AI Love Match - 智能情感分析与匹配平台",
@@ -14,6 +15,7 @@ export default function RootLayout({
   return (
     <html lang="zh-CN">
       <body>{children}</body>
+      <Toaster />
     </html>
   );
 }
